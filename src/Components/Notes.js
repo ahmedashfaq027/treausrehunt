@@ -37,10 +37,7 @@ function Notes() {
         <div className="notes">
             <div className="notes__list">
                 {notes.map((note, index) => (
-                    <div
-                        key={`note__${index}`}
-                        className={`note note__${index}`}
-                    >
+                    <div key={`note__${index}`} className={`note`}>
                         <p>{note}</p>
                         <span onClick={(e) => removeNote(index, e)}>x</span>
                     </div>
