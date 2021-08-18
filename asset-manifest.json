@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/treasurehunt/static/css/main.8784748c.chunk.css",
+    "main.css": "/treasurehunt/static/css/main.311ad7e5.chunk.css",
     "main.js": "/treasurehunt/static/js/main.92124a36.chunk.js",
     "main.js.map": "/treasurehunt/static/js/main.92124a36.chunk.js.map",
     "runtime-main.js": "/treasurehunt/static/js/runtime-main.0f5b759e.js",
@@ -10,14 +10,14 @@
     "static/js/3.a84a6954.chunk.js": "/treasurehunt/static/js/3.a84a6954.chunk.js",
     "static/js/3.a84a6954.chunk.js.map": "/treasurehunt/static/js/3.a84a6954.chunk.js.map",
     "index.html": "/treasurehunt/index.html",
-    "static/css/main.8784748c.chunk.css.map": "/treasurehunt/static/css/main.8784748c.chunk.css.map",
+    "static/css/main.311ad7e5.chunk.css.map": "/treasurehunt/static/css/main.311ad7e5.chunk.css.map",
     "static/js/2.4f15f6db.chunk.js.LICENSE.txt": "/treasurehunt/static/js/2.4f15f6db.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/treasurehunt/static/media/TreasureMapDeadhand-yLA3.b5517c71.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.0f5b759e.js",
     "static/js/2.4f15f6db.chunk.js",
-    "static/css/main.8784748c.chunk.css",
+    "static/css/main.311ad7e5.chunk.css",
     "static/js/main.92124a36.chunk.js"
   ]
 }
