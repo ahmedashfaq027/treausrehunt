@@ -5,6 +5,13 @@ import Section from "./Components/Section";
 function App() {
     const colors = ["#cfb6e2", "#a7b4f1", "#6fb8b5", "#67cade", "#d0cda9"];
     const [winpos, setWinpos] = useState([1, 2, 3]);
+    const [treasurepos, setTreasurepos] = useState([
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+    ]);
     const [teams, setTeams] = useState([]);
     const [cardsData, setCardsData] = useState([]);
     const [cards, setCards] = useState([]);
@@ -66,6 +73,8 @@ function App() {
                         members={team}
                         cards={cards && cards[index]}
                         winpos={winpos}
+                        treasurepos={treasurepos}
+                        setTreasurepos={setTreasurepos}
                         setWinpos={setWinpos}
                     />
                 ))}
