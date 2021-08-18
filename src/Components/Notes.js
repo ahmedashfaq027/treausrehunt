@@ -5,7 +5,7 @@ function Notes() {
     const [addNote, setAddNote] = useState(false);
     const [notes, setNotes] = useState([]);
     const [input, setInput] = useState("");
-    const inputRef = useRef();
+    const inpRef = useRef();
 
     const addNoteHandler = (e) => {
         e.preventDefault();
@@ -17,9 +17,13 @@ function Notes() {
 
         setAddNote(!addNote);
         setInput("");
-
-        console.log(notes);
     };
+
+    useEffect(() => {
+        if (addNote) {
+            inpRef.current.focus();
+        }
+    }, [addNote]);
 
     const buttonClick = (e) => {
         setAddNote(!addNote);
@@ -42,26 +46,27 @@ function Notes() {
                     </div>
                 ))}
             </div>
-            {!addNote ? (
+            {!addNote && (
                 <div className="notes__add" onClick={(e) => buttonClick(e)}>
                     <h3 className="add__icon">➕ </h3>
                     <p>Add note</p>
                 </div>
-            ) : (
-                <form
-                    className="edit__note"
-                    onSubmit={(e) => addNoteHandler(e)}
-                >
-                    <input
-                        type="text"
-                        ref={inputRef}
-                        value={input}
-                        tabIndex="0"
-                        onChange={(e) => setInput(e.target.value)}
-                        className="note__text"
-                    />
-                </form>
             )}
+            <form
+                style={{ display: addNote ? "flex" : "none" }}
+                className="edit__note"
+                onSubmit={(e) => addNoteHandler(e)}
+            >
+                <input
+                    type="text"
+                    ref={inpRef}
+                    value={input}
+                    tabIndex="0"
+                    onBlur={(e) => addNoteHandler(e)}
+                    onChange={(e) => setInput(e.target.value)}
+                    className="note__text"
+                />
+            </form>
         </div>
     );
 }
