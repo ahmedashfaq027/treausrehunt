@@ -107,12 +107,12 @@ function Section({
                     <>
                         <img
                             className="medal"
-                            src={win !== -1 && `/winpos/${win}.png`}
+                            src={win !== -1 && `./winpos/${win}.png`}
                             alt=""
                         />
                         <img
                             className="treasure"
-                            src={treasure !== -1 && `/winpos/${treasure}.png`}
+                            src={treasure !== -1 && `./winpos/${treasure}.png`}
                             alt=""
                         />
                     </>
