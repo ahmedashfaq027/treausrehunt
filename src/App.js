@@ -15,39 +15,32 @@ function App() {
     const [teams, setTeams] = useState([]);
     const [cardsData, setCardsData] = useState([]);
     const [cards, setCards] = useState([]);
+    const [order, setOrder] = useState([]);
 
     useEffect(() => {
-        async function fetchTeams() {
-            await fetch("./teams.json")
-                .then((data) => data.json())
-                .then((res) => setTeams(res))
-                .catch((err) => console.log(err, "error"));
-        }
-
-        async function fetchCards() {
+        async function fetchData() {
             await fetch("./thunt-cards.json")
                 .then((data) => data.json())
-                .then((res) => setCardsData(res))
+                .then((res) => {
+                    setTeams(res.teams);
+                    setCardsData(res.cards);
+                    setOrder(res.order);
+                })
                 .catch((err) => console.log(err, "error"));
         }
 
-        fetchTeams();
-        fetchCards();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+        fetchData();
     }, []);
 
     useEffect(() => {
-        function randomlyAddCards(res) {
+        function randomlyAddCards() {
             setCards([]);
             for (let i = 0; i < teams.length; i++) {
                 let tmpCards = [];
-                Object.keys(res).forEach((key) => {
-                    let cardsArray = res[key];
-                    const randomIndex = Math.floor(
-                        Math.random() * cardsArray.length
-                    );
-                    tmpCards.push(cardsArray[randomIndex]);
-                    cardsArray.splice(randomIndex, 1);
+                Object.keys(order).forEach((key, index) => {
+                    const idx = order[key][i] - 1;
+                    let card = cardsData[key][idx];
+                    tmpCards.push(card);
                 });
 
                 setCards((prev) => [...prev, tmpCards]);
@@ -55,9 +48,9 @@ function App() {
         }
 
         if (cardsData) {
-            randomlyAddCards(cardsData);
+            randomlyAddCards();
         }
-    }, [cardsData, teams.length]);
+    }, [cardsData, order, teams.length]);
 
     return (
         <div className="app">
