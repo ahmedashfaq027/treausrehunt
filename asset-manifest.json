@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/treasurehunt/static/css/main.fba9a81c.chunk.css",
-    "main.js": "/treasurehunt/static/js/main.aa78153d.chunk.js",
-    "main.js.map": "/treasurehunt/static/js/main.aa78153d.chunk.js.map",
+    "main.css": "/treasurehunt/static/css/main.af0cb06f.chunk.css",
+    "main.js": "/treasurehunt/static/js/main.2e95d5f4.chunk.js",
+    "main.js.map": "/treasurehunt/static/js/main.2e95d5f4.chunk.js.map",
     "runtime-main.js": "/treasurehunt/static/js/runtime-main.0f5b759e.js",
     "runtime-main.js.map": "/treasurehunt/static/js/runtime-main.0f5b759e.js.map",
-    "static/js/2.329b8481.chunk.js": "/treasurehunt/static/js/2.329b8481.chunk.js",
-    "static/js/2.329b8481.chunk.js.map": "/treasurehunt/static/js/2.329b8481.chunk.js.map",
+    "static/js/2.fc7f0bb2.chunk.js": "/treasurehunt/static/js/2.fc7f0bb2.chunk.js",
+    "static/js/2.fc7f0bb2.chunk.js.map": "/treasurehunt/static/js/2.fc7f0bb2.chunk.js.map",
     "static/js/3.a84a6954.chunk.js": "/treasurehunt/static/js/3.a84a6954.chunk.js",
     "static/js/3.a84a6954.chunk.js.map": "/treasurehunt/static/js/3.a84a6954.chunk.js.map",
     "index.html": "/treasurehunt/index.html",
-    "static/css/main.fba9a81c.chunk.css.map": "/treasurehunt/static/css/main.fba9a81c.chunk.css.map",
-    "static/js/2.329b8481.chunk.js.LICENSE.txt": "/treasurehunt/static/js/2.329b8481.chunk.js.LICENSE.txt",
+    "static/css/main.af0cb06f.chunk.css.map": "/treasurehunt/static/css/main.af0cb06f.chunk.css.map",
+    "static/js/2.fc7f0bb2.chunk.js.LICENSE.txt": "/treasurehunt/static/js/2.fc7f0bb2.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/treasurehunt/static/media/TreasureMapDeadhand-yLA3.b5517c71.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.0f5b759e.js",
-    "static/js/2.329b8481.chunk.js",
-    "static/css/main.fba9a81c.chunk.css",
-    "static/js/main.aa78153d.chunk.js"
+    "static/js/2.fc7f0bb2.chunk.js",
+    "static/css/main.af0cb06f.chunk.css",
+    "static/js/main.2e95d5f4.chunk.js"
   ]
 }
