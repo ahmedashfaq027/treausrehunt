@@ -56,6 +56,7 @@ function Notes() {
             >
                 <input
                     type="text"
+                    placeholder="Add Note..."
                     ref={inpRef}
                     value={input}
                     tabIndex="0"
