@@ -24,6 +24,13 @@
         background-color: #4053e3;
 
         .title {
+            -webkit-user-select: none; /* Safari */
+            -webkit-touch-callout: none; /* iOS Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            -moz-user-select: none; /* Old versions of Firefox */
+            user-select: none; /* Non-prefixed version*/
+
             margin: 0 !important;
         }
     }
@@ -70,6 +77,13 @@
         align-items: center;
 
         .team__name {
+            -webkit-user-select: none; /* Safari */
+            -webkit-touch-callout: none; /* iOS Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            -moz-user-select: none; /* Old versions of Firefox */
+            user-select: none; /* Non-prefixed version*/
+
             margin: 1rem;
         }
 
@@ -110,6 +124,13 @@
             margin-top: 1rem;
             flex-wrap: wrap;
 
+            -webkit-user-select: none; /* Safari */
+            -webkit-touch-callout: none; /* iOS Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            -moz-user-select: none; /* Old versions of Firefox */
+            user-select: none; /* Non-prefixed version*/
+
             .progress__indi {
                 width: 1.5rem;
                 height: 1.5rem;
@@ -141,6 +162,7 @@
             margin: 0 1.7rem;
 
             button {
+                cursor: pointer;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -180,6 +202,13 @@
         }
 
         .team__members {
+            -webkit-user-select: none; /* Safari */
+            -webkit-touch-callout: none; /* iOS Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            -moz-user-select: none; /* Old versions of Firefox */
+            user-select: none; /* Non-prefixed version*/
+
             margin: 2rem;
         }
     }
@@ -234,6 +263,13 @@
         transition: all 0.3s ease;
 
         p {
+            -webkit-user-select: none; /* Safari */
+            -webkit-touch-callout: none; /* iOS Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            -moz-user-select: none; /* Old versions of Firefox */
+            user-select: none; /* Non-prefixed version*/
+
             margin-left: 0.5rem;
         }
 
